@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import City from "./City";
-import bgImage from "../images/hava-durumu.jpg";
 
 function App() {
   const key = "273e480d3d8703fe863355d930f5dfef";
@@ -25,7 +24,7 @@ function App() {
       getApi();
     }
 
-    console.log(search);
+    // console.log(search);
   }, [search]);
 
   // const handleClick = () => {
@@ -36,9 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="bg-image">
-        <img src="{bgImage}" alt="" />
-      </div>
+      <div className="bg-image"></div>
       <h1>HAVA DURUMUNU ÖĞRENMEK İSTERSEN😎</h1>
       <input
         value={search}
